@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Server Status Checker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>HI-LIGHT The Minecraft Server Status Checker</h1>
+            <p>Get real-time information about your favorite Minecraft servers.</p>
+        </header>
+        <div class="search-section">
+            <input type="text" id="server-ip" placeholder="Enter server IP or domain">
+            <button id="check-status">Check Status</button>
+        </div>
+        <div id="loading" class="loading">Loading...</div>
+        <div id="status-result" class="status-result"></div>
+        <div id="server-info" class="server-info">
+            <h2>Server Information</h2>
+            <p><strong>Status:</strong> <span id="status"></span></p>
+            <p><strong>MOTD:</strong> <span id="motd"></span></p>
+            <p><strong>Version:</strong> <span id="version"></span></p>
+            <p><strong>Protocol:</strong> <span id="protocol"></span></p>
+            <p><strong>IP Address:</strong> <span id="ip-address"></span></p>
+            <p><strong>Port:</strong> <span id="port"></span></p>
+            <p><strong>Players:</strong> <span id="players"></span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
